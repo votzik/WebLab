@@ -5,9 +5,17 @@
     <meta charset='utf-8'>
     <title>Page Title</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
         body {
             margin: 0px;
-            background-color: white;
+            background-repeat: no-repeat;
+            background-color: #33bbff;
+            /* background-image: url("..\\assets\\bg2.jpg"); */
+            background-size: 100%;
+            background-attachment: fixed;
+            background-position-y: center;
         }
 
         @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
@@ -22,6 +30,7 @@
             text-align: center;
             position: relative;
             background: orange;
+            box-shadow: gray inset 0px 0px 10px; 
         }
 
         .menu-main:after {
@@ -86,6 +95,23 @@
             color: black;
         }
 
+        .text-box{
+            background: white;
+            align-content: center;
+            margin:auto;
+            top: 200px;
+            position: relative;   
+            display: block;
+            text-align: center;
+            width: 30%;
+            height: 100px;
+            padding:20px;
+            font-style: italic;
+            margin-top: 10px;
+            box-shadow: grey 0px 0px 10px;
+
+        }
+
         @media(max-width:680px) {
             .menu-main li {
                 display: block;
@@ -101,7 +127,7 @@
         <li><a href="">Register</a></li>
         <li><a href="">About</a></li>
     </ul>
-    <h1>Приветствую смотрящих</h1>
+    <div class="text-box">Приветстувую смотрящих</div>
     <a href="https://www.youtube.com/watch?v=WixZVHKewa8">Anime</a>
     <section>
 </body>
