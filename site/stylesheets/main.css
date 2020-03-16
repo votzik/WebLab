@@ -209,9 +209,12 @@ body {
         position: relative;
         margin-top: 200px;
     }
+    .search{
+        width: 140%;
+    }
     .cards li{
         display: block;
-        width: 300px;
+        width: 50%;
         margin: auto;
         margin-bottom: 40px;
     }
