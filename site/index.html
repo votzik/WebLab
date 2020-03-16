@@ -3,133 +3,67 @@
 
 <head>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="..\\stylesheets\\main.css" rel="stylesheet">
     <title>Page Title</title>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        body {
-            margin: 0px;
-            background-repeat: no-repeat;
-            background-color: #33bbff;
-            /* background-image: url("..\\assets\\bg2.jpg"); */
-            background-size: 100%;
-            background-attachment: fixed;
-            background-position-y: center;
-        }
-
-        @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
-
-        .menu-main {
-            list-style: none;
-            padding: 0 30px;
-            margin: 0;
-            bottom: 0px;
-            padding-bottom: 20px;
-            font-size: 18px;
-            text-align: center;
-            position: relative;
-            background: orange;
-            box-shadow: gray inset 0px 0px 10px; 
-        }
-
-        .menu-main:after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 30px;
-            left: 0;
-            bottom: -20px;
-            background: -10px;
-            background-size: 20px 20px;
-            background-repeat: repeat-x;
-        }
-
-        .menu-main li {
-            display:inline-block;
-           
-        }
-
-        .menu-main a {
-            text-decoration: none;
-            display: inline-block;
-            margin: 0 15px;
-            padding: 10px 30px;
-            font-family: 'PT Sans Caption', sans-serif;
-            color: #777777;
-            transition: .3s linear;
-            position: relative;
-            top: 10px;
-        }
-
-        .menu-main a:before,
-        .menu-main a:after {
-            content: "";
-            position: absolute;
-            top: calc(50% - 3px);
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background: black;
-            opacity: 0;
-            transition: .5s ease-in-out;
-        }
-
-        .menu-main a:before {
-            left: 5px;
-        }
-
-        .menu-main a:after {
-            right: 5px;
-        }
-
-        .menu-main a.current:before,
-        .menu-main a.current:after,
-        .menu-main a:hover:before,
-        .menu-main a:hover:after {
-            opacity: 1;
-        }
-
-        .menu-main a.current,
-        .menu-main a:hover {
-            color: black;
-        }
-
-        .text-box{
-            background: white;
-            align-content: center;
-            margin:auto;
-            top: 200px;
-            position: relative;   
-            display: block;
-            text-align: center;
-            width: 30%;
-            height: 100px;
-            padding:20px;
-            font-style: italic;
-            margin-top: 10px;
-            box-shadow: grey 0px 0px 10px;
-
-        }
-
-        @media(max-width:680px) {
-            .menu-main li {
-                display: block;
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <ul class="menu-main">
-        <li><a href="" class="current">Main</a></li>
-        <li><a href="">Login</a></li>
-        <li><a href="">Register</a></li>
-        <li><a href="">About</a></li>
-    </ul>
-    <div class="text-box">Приветстувую смотрящих</div>
-    <a href="https://www.youtube.com/watch?v=WixZVHKewa8">Anime</a>
-    <section>
+    <div class="wrap-s">
+        <div class="fixed-menu">
+            <ul class="menu-main">
+                <li><a href="" class="current">Main</a></li>
+                <li><a href="">Login</a></li>
+                <li><a href="">Register</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </div>
+
+        <div class=text style="text-align: center;">
+            <h1>Wanderlance</h1>
+            <div class="subtext">
+                A site where you can offer others your hobby
+            </div>
+           
+        </div>
+        <div class="wrap">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <ul class=cards>
+            <li>
+                <div class="card">
+                    <img src="..\\assets\\bg2.jpg" >
+                    <div class="container">
+                        <h4><b>Програмер</b></h4>
+                        <p>Ну він програмує</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="..\\assets\\bg2.jpg" >
+                    <div class="container">
+                        <h4><b>Це тоже програмер</b></h4>
+                        <p>Ну він тоже програмує</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="..\\assets\\bg2.jpg" >
+                    <div class="container">
+                        <h4><b>Флорист</b></h4>
+                        <p>Ігор Чайковський</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 </body>
 
 </html>
