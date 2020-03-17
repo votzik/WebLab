@@ -18,7 +18,7 @@ body {
     margin-top: 0%;
     padding-top: 0%;
     top:-5px;
-    
+    z-index: 2;
   } 
 
 
@@ -116,10 +116,11 @@ body {
     box-shadow: grey 0px 0px 10px;
 
 }
-.text{
+.text-mine{
     font-family: 'PT Sans Caption', sans-serif;
     margin-left: 16px;
-    margin-top: 50px;
+    margin-top: 70px;
+    padding-top: 20px;
     color: #2e2d2d;
     top:80px;
     clear: both;
@@ -128,8 +129,8 @@ body {
 }
 
 .search {
-    width: 100%;
-    margin-left: 120%;
+    width: 120%;
+    margin-left: 110%;
     display: flex;
     margin-bottom: 40px;
 
@@ -171,35 +172,83 @@ body {
     border: 30px;
   }
 
-  .card {
+  .card-mine {
 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background-color: white;
   }
 
-  .card:hover {
+  .card-mine:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
 
-  .container {
-    padding: 2px 16px;
+  .container-mine {
+    padding: 16px 16px;
   }
 
   
-  .cards li {
+  .cards-mine li {
     display:inline-block;
     width: 44%;
     margin-left: 20px;
     margin-bottom: 20px;
    
 }
-.cards li img{
+.cards-mine li img{
     width: 100%;
     height: 250px;
 }
 
+.footer-wrap{
+    position: relative;
+    top: 20px;
+}
+
+.foot-list{
+    list-style: none;
+    padding: 0 10px;
+    margin: 0;
+}
+
+
+.foot-list a {
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: 'PT Sans Caption', sans-serif;
+    color: #9e9595; 
+    transition: .3s linear;
+    position: relative;
+    top: 10px;
+}
+
+.foot-list a:before,
+.foot-list a:after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 3px);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgb(255, 205, 42);
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+
+
+.footer-list a:hover {
+    color: rgb(255, 205, 42);
+}
+
+
+.copyright{
+    margin-top:15px;
+    margin-bottom: 0px;
+
+}
 
 @media(max-width:680px) {
     .menu-main li {
@@ -212,9 +261,9 @@ body {
     .search{
         width: 140%;
     }
-    .cards li{
+    .cards-mine li{
         display: block;
-        width: 50%;
+        width: 60%;
         margin: auto;
         margin-bottom: 40px;
     }

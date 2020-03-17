@@ -4,8 +4,10 @@
 <head>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets\\bootstrap.min.css">
     <link href="stylesheets\\main.css" rel="stylesheet">
     <title>Page Title</title>
+
 </head>
 
 <body>
@@ -14,56 +16,96 @@
             <ul class="menu-main">
                 <li><a href="" class="current">Main</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="">Register</a></li>
+                <li><a href="register.html">Register</a></li>
                 <li><a href="">About</a></li>
             </ul>
         </div>
 
-        <div class=text style="text-align: center;">
+        <div class=text-mine style="text-align: center;">
             <h1>Wanderlance</h1>
             <div class="subtext">
                 A site where you can offer others your hobby
             </div>
-           
         </div>
         <div class="wrap">
             <div class="search">
-                <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                <input type="text" class="searchTerm" placeholder="Search">
                 <button type="submit" class="searchButton">
                     <i class="fa fa-search"></i>
                 </button>
             </div>
         </div>
-        <ul class=cards>
+        <ul class=cards-mine>
             <li>
-                <div class="card">
-                    <img src="assets\\bg2.jpg" >
-                    <div class="container">
-                        <h4><b>Програмер</b></h4>
+                <div class="card-mine">
+                    <img src="assets\\bg2.jpg">
+                    <div class="container-mine">
+                        <h5><b>Програмер</b></h5>
                         <p>Ну він програмує</p>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="card">
-                    <img src="assets\\bg2.jpg" >
-                    <div class="container">
-                        <h4><b>Це тоже програмер</b></h4>
+                <div class="card-mine">
+                    <img src="assets\\bg2.jpg">
+                    <div class="container-mine">
+                        <h5><b>Це тоже програмер</b></h5>
                         <p>Ну він тоже програмує</p>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="card">
-                    <img src="assets\\bg2.jpg" >
-                    <div class="container">
-                        <h4><b>Флорист</b></h4>
+                <div class="card-mine">
+                    <img src="assets\\bg2.jpg">
+                    <div class="container-mine">
+                        <h5><b>Флорист</b></h5>
                         <p>Ігор Чайковський</p>
                     </div>
                 </div>
             </li>
         </ul>
+
+
+
     </div>
+
+    <div class="footer-wrap">
+        <footer class="card-footer bg-white">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul class="foot-list">
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul class="foot-list">
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Legacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Support</h3>
+                        <ul class="foot-list">
+                            <li><a href="#">Get in touch</a></li>
+                            <li><a href="#">Q/A</a></li>
+                            <li><a href="#">Forgot password</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright text-center" >WanderLance ©2020</p>
+    </div>
+    </footer>
+    </div>
+
+    <script src="stylesheets/js/jquery-3.4.1.min.js"></script>
+    <script src="stylesheets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
