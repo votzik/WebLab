@@ -75,7 +75,7 @@ body {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: rgb(255, 205, 42);
+    background: #00B4CC;
     opacity: 0;
     transition: .5s ease-in-out;
 }
@@ -97,7 +97,7 @@ body {
 
 .menu-main a.current,
 .menu-main a:hover {
-    color: rgb(255, 205, 42);
+    color: #00B4CC;
 }
 
 .text-box{
@@ -161,7 +161,9 @@ body {
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
+  
   }
+ 
   
   .wrap{
     width: 30%;
@@ -186,6 +188,7 @@ body {
 
   .container-mine {
     padding: 16px 16px;
+
   }
 
   
@@ -204,24 +207,33 @@ body {
 .footer-wrap{
     position: relative;
     top: 20px;
+    height: 80%;
 }
-
+.card-footer{
+    padding: .3rem 1.25rem;
+}
+h5{
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
 .foot-list{
     list-style: none;
-    padding: 0 10px;
+    padding: 0 5px;
     margin: 0;
+    font-weight: 200;
 }
 
 
 .foot-list a {
     text-decoration: none;
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-family: 'PT Sans Caption', sans-serif;
     color: #9e9595; 
     transition: .3s linear;
     position: relative;
-    top: 10px;
+    top: 5px;
 }
 
 .foot-list a:before,
@@ -248,7 +260,7 @@ body {
 .copyright{
     margin-top:15px;
     margin-bottom: 0px;
-
+    padding-bottom: 0;
 }
 
 @media(max-width:680px) {
@@ -262,10 +274,16 @@ body {
     .search{
         width: 140%;
     }
+
     .cards-mine li{
         display: block;
         width: 60%;
         margin: auto;
         margin-bottom: 40px;
+    }
+  
+    .footer-wrap{
+        text-align: center;
+        display: none;
     }
 }
