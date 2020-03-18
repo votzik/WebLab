@@ -6,9 +6,9 @@
 }
 body {
     margin-left: 0px;
-    background-repeat: no-repeat;
-    background-color: #f2f2f2;
-
+    background-color: #f2f6ff;
+    background-size: cover;
+    
     font-family: 'PT Sans Caption', sans-serif;
 
 }
@@ -194,7 +194,7 @@ body {
   
   .cards-mine li {
     display:inline-block;
-    width: 44%;
+    width: 30%;
     margin-left: 20px;
     margin-bottom: 20px;
    
