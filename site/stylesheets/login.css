@@ -16,9 +16,17 @@
   
   .login-clean .illustration {
     text-align: center;
-    padding: 0 0 20px;
+    padding: 0 0 150px;
     font-size: 100px;
     color: rgb(244,71,107);
+  }
+
+  .illustration{
+    background-image: url(../assets/logo.png);
+    width: 100%;
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    margin-left: 10px;
   }
   
   .login-clean form .form-control {

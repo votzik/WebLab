@@ -211,6 +211,7 @@ body {
 }
 .card-footer{
     padding: .3rem 1.25rem;
+    background-color: white;
 }
 h5{
     font-size: 20px;
@@ -272,7 +273,8 @@ h5{
         margin-top: 200px;
     }
     .search{
-        width: 140%;
+        width: 160%;
+
     }
 
     .cards-mine li{
@@ -280,10 +282,26 @@ h5{
         width: 60%;
         margin: auto;
         margin-bottom: 40px;
+        padding-left: auto;
     }
   
     .footer-wrap{
         text-align: center;
         display: none;
+    }
+}
+
+@media(max-width:400px) {
+
+    .cards-mine li{
+        display: block;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-left: 50px;
+    }
+    .search{
+        width: 160%;
+        margin-left: 90%;
     }
 }
