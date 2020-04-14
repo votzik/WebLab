@@ -1,0 +1,91 @@
+//colors
+$color_link_water_approx: #f1f7fc;
+$white: #ffffff;
+$color_shuttle_gray_approx: #505e6c;
+$black_10: rgba(0,0,0,0.1);
+$color_carnation_approx: rgb(244,71,107);
+$color_cerulean_approx: #00b4cc;
+$color_pacific_blue_approx: rgb(2, 170, 192);
+$color_pale_sky_approx: #6f7a85;
+
+//urls\\\\\\
+$url_0: url(../assets/logo.png);
+
+.login-clean {
+	background: $color_link_water_approx;
+	padding: 80px 0;
+	form {
+		max-width: 320px;
+		width: 90%;
+		margin: 0 auto;
+		background-color: $white;
+		padding: 40px;
+		// border-radius($radius, $vertical-radius)
+		border-radius: 4px;
+		color: $color_shuttle_gray_approx;
+		// box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 1px 1px 5px $black_10;
+		.form-control {
+			background: $color_link_water_approx;
+			border: none;
+			border-bottom: 1px solid $color_link_water_approx;
+			// border-radius($radius, $vertical-radius)
+			border-radius: 0;
+			// box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: none;
+			outline: none;
+			color: inherit;
+			text-indent: 8px;
+			height: 42px;
+		}
+		.btn-primary {
+			background: $color_cerulean_approx;
+			border: none;
+			// border-radius($radius, $vertical-radius)
+			border-radius: 4px;
+			padding: 11px;
+			// box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: none;
+			margin-top: 26px;
+			// text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			text-shadow: none;
+			outline: none !important;
+			&:hover {
+				background: $color_pacific_blue_approx;
+			}
+			&:active {
+				background: $color_pacific_blue_approx;
+				transform: translateY(1px);
+			}
+		}
+		.forgot {
+			display: block;
+			text-align: center;
+			font-size: 12px;
+			color: $color_pale_sky_approx;
+			opacity: 0.9;
+			text-decoration: none;
+			&:hover {
+				opacity: 1;
+				text-decoration: none;
+			}
+			&:active {
+				opacity: 1;
+				text-decoration: none;
+			}
+		}
+	}
+	.illustration {
+		text-align: center;
+		padding: 0 0 150px;
+		font-size: 100px;
+		color: $color_carnation_approx;
+	}
+}
+.illustration {
+	background-image: $url_0;
+	width: 100%;
+	padding-bottom: 100px;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+}
